@@ -41,7 +41,17 @@
        alias: stress_on_air_ocn_merid
        canonical_units: N m-2
        description: mediator export
+     #+tht
+     - standard_name: Faox_tauxa
+       alias: stress_on_air_ocn_zonal (atm)
+       canonical_units: N m-2
+       description: mediator export
      #
+     - standard_name: Faox_tauya
+       alias: stress_on_air_ocn_merid (atm)
+       canonical_units: N m-2
+       description: mediator export
+     #-tht
      - standard_name: area
        canonical_units: radians**2
        description: mediator area for component
@@ -225,7 +235,17 @@
        canonical_units: W m-2
        description: atmosphere export
          mean downward SW heat flux
+     #+tht
+     - standard_name: Faxa_wsxadj
+       canonical_units: Pa
+       description: (from) atmosphere export to flux_atmocn (for now)
+         mean wind-stess correction due to PBL iteration, zonal component
      #
+     - standard_name: Faxa_wsyadj
+       canonical_units: Pa
+       description: (from) atmosphere export to flux_atmocn (for now)
+         mean wind-stess correction due to PBL iteration, meridional component
+     #-tht
      - standard_name: Faxa_ndep
        canonical_units: kg(N)/m2/sec
        description: atmosphere export to land and ocean - currently nhx and noy
